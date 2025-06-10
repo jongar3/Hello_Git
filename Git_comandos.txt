@@ -1,0 +1,59 @@
+        CONFIG  
+
+git config --global user.name "nombre"
+git config --global user.email "email"
+
+        INICIAR
+git init
+git branch -m "main"      cambiar nombre rama
+
+git status
+
+git add nombre_archivo      sacar "foto"
+
+git commit= git commit -m "Este es mi ..."
+
+git log (--graph)        (ver los commits)
+
+git reflog 
+
+git reset archivo     quitar archivo de add
+
+git reset --hard has   cambiar el head borrando las ramas superiores (se pueden recuperar con git reflog)
+
+git restore --source="hash-commit" archivo
+recuperar archivo de add o si no hay, del comment del head se puede sustituir por checkout
+
+git checkout "hash" movemos el "Head"
+
+git diff (ver los cambios respecto al commit)
+
+git revert ("cargarse commits")
+
+    ALIAS "CREAR TUS PROPIOS COMANDOS"  
+ej: git config --global alias.tree "log --graph --pretty=oneline"
+
+git tag "clase_1" los tag se pueden usar en lugar de los hashes.
+
+
+git branch nueva_rama 
+git switch nueva_rama 
+(creamos y cambiamos a la nueva rama)
+
+git merge login     traer los datos de la rama login al head.
+
+
+git stash   (hace un commit de manera temporal sin afectar al arbol. pensado para moverte de rama sin perder lo de la rama anterior pero sin hacer un commit)
+git stash list (ver los hash se los stash)
+
+git stash pop (cargar el stash)
+
+git branch -d nombre_rama (borrar rama)
+
+-----------------------------------------
+    GITHUB
+
+git remote add origin git@github.com:jongar3/Directorio_de_git_hub.git
+
+
+
