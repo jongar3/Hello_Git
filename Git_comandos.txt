@@ -35,6 +35,9 @@ git diff (ver los cambios respecto al commit)
 git revert ("cargarse commits")
 
 
+NOTA, SI CAMBIO UN ARCHIVO DE MAIN, GIT SWITCH SIRVE PARA CAMBIAR EL HEAD POR LO QUE NO FUNCIONARI GIT SWITCH MAIN, GIT RESTORE . ME TRAERIA TODOS LOS ARCHVIOS DEL HEAD POR LO QUE HABRIA QUE USAR ESO.        
+
+
     ALIAS "CREAR TUS PROPIOS COMANDOS"  
 ej: git config --global alias.tree "log --graph --pretty=oneline"
 
