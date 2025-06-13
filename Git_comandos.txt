@@ -22,13 +22,18 @@ git reset archivo     quitar archivo de add
 git reset --hard has   cambiar el head borrando las ramas superiores (se pueden recuperar con git reflog)
 
 git restore --source="hash-commit" archivo
-recuperar archivo de add o si no hay, del comment del head se puede sustituir por checkout
+recuperar archivo de add o si no hay, del comment del head se puede sustituir por checkout, para traer archivos
+
+git show <commit_hash>:<path/to/file>         como el de arriba, pero lo imprime en la terminal
+
+git show <commit_hash>: Muestra los detalles del commit (log, diff)
 
 git checkout "hash" movemos el "Head"
 
 git diff (ver los cambios respecto al commit)
 
 git revert ("cargarse commits")
+
 
     ALIAS "CREAR TUS PROPIOS COMANDOS"  
 ej: git config --global alias.tree "log --graph --pretty=oneline"
